@@ -94,7 +94,9 @@
     .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 27px; }
     .project-tags span { color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .02em; }
     .project-tags span + span::before { content: "·"; padding-right: 8px; color: var(--coral); }
-    .project-link { display: inline-flex; align-items: center; min-height: 44px; width: fit-content; margin-top: auto; color: var(--accent); font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; transition: color .2s ease; }
+    .project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: auto; }
+    .project-note { margin: 0 0 18px; padding: 8px 14px; border-left: 2px solid var(--coral); border-radius: 0 4px 4px 0; background: rgb(255 92 168 / 10%); color: var(--coral); font-size: 13px; }
+    .project-link { display: inline-flex; align-items: center; min-height: 44px; width: fit-content; color: var(--accent); font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; transition: color .2s ease; }
     .project-link:hover { color: var(--coral); }
     .contact { padding-block: 84px; background: #080c18; }
     .hobbies { background: var(--paper); }
@@ -212,14 +214,15 @@
             <h3>NoMoreDiscord</h3>
             <p>Peer-to-peer voice chat for Dota nights. Pick a name, press Join Roshan, and talk — no server, no account, no install. Mesh WebRTC voice for up to five players, host-relayed chat that survives reloads, and a soundboard mixed straight into your outgoing audio.</p>
             <div class="project-tags"><span>Vanilla JS</span><span>WebRTC</span><span>PeerJS</span></div>
-            <a class="project-link" href="https://github.com/crankygrey/nomorediscord" target="_blank" rel="noopener noreferrer" aria-label="NoMoreDiscord repository on GitHub">Repository link <span aria-hidden="true">↗</span></a>
+            <p class="project-note">Note: the demo uses a free Metered TURN server that may expire, so voice may stop connecting until it is renewed.</p>
+            <div class="project-links"><a class="project-link" href="https://nomorediscord.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the NoMoreDiscord live demo">Live demo <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/crankygrey/nomorediscord" target="_blank" rel="noopener noreferrer" aria-label="NoMoreDiscord repository on GitHub">Repository <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project-card">
             <div class="project-meta"><span>Project 02</span><span>Full-stack</span></div>
             <h3>Blame the Draft</h3>
             <p>A lightweight Flask + Socket.IO party game for Dota 2 friends. Visitors drop into one shared lobby, suggest two heroes for a target player, and watch a live draft board track every suggestion until the target makes the call in-game.</p>
             <div class="project-tags"><span>Python</span><span>Flask</span><span>Socket.IO</span></div>
-            <a class="project-link" href="https://github.com/crankygrey/blamethedraft" target="_blank" rel="noopener noreferrer" aria-label="Blame the Draft repository on GitHub">Repository link <span aria-hidden="true">↗</span></a>
+            <div class="project-links"><a class="project-link" href="https://blamethedraft.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open the Blame the Draft live demo">Live demo <span aria-hidden="true">↗</span></a><a class="project-link" href="https://github.com/crankygrey/blamethedraft" target="_blank" rel="noopener noreferrer" aria-label="Blame the Draft repository on GitHub">Repository <span aria-hidden="true">↗</span></a></div>
           </article>
         </div>
       </div>
