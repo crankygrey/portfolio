@@ -1,0 +1,23 @@
+# Dependencies and generated output
+node_modules/
+vendor/
+dist/
+build/
+coverage/
+.opencode/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
