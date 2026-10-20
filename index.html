@@ -8,7 +8,9 @@
   <title>Chan Myae Kyaw Min — Backend-focused Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
   <style>
     :root {
       color-scheme: dark;
@@ -291,7 +293,7 @@
             </div>
           </div>
           <figure class="cat-figure">
-            <img src="my-cat.webp" alt="My cat relaxing in a bed." width="1280" height="720" loading="lazy">
+            <img src="my-cat.webp" srcset="my-cat-880.webp 880w, my-cat.webp 1280w" sizes="(max-width: 760px) 90vw, 440px" alt="My cat relaxing in a bed." width="1280" height="809" loading="lazy" decoding="async">
             <figcaption>This is my cat</figcaption>
           </figure>
         </div>
