@@ -171,6 +171,7 @@
       .nav a { font-size: 11px; }
       .nav .nav-contact { padding: 0 12px; }
       .hero { min-height: 0; padding-block: 75px 65px; }
+      h1 em { font-size: .75em; white-space: nowrap; }
       .section { padding-block: 68px; }
       .section-head { align-items: flex-start; flex-direction: column; gap: 16px; margin-bottom: 30px; }
       .skills-layout { grid-template-columns: 1fr; gap: 34px; }
@@ -182,6 +183,10 @@
       .channel-card { margin-top: 38px; }
       .contact-inner { align-items: flex-start; flex-direction: column; }
     }
+    @media (min-width: 761px) and (max-width: 900px) {
+      .hobbies-layout { grid-template-columns: minmax(0, 1fr); gap: 38px; }
+      .cat-figure { justify-self: center; transform: none; }
+    }
     @media (max-width: 440px) {
       .shell { width: calc(100% - 36px); }
       .topbar { height: auto; min-height: 52px; padding-block: 6px; }
@@ -192,7 +197,7 @@
       .theme-toggle svg { width: 16px; height: 16px; }
       .eyebrow { font-size: 10px; letter-spacing: .12em; }
       .hero { padding-top: 40px; }
-      h1 { font-size: clamp(34px, 9vw, 52px); white-space: nowrap; }
+      h1 { font-size: clamp(34px, 9vw, 52px); }
       .skill-grid { grid-template-columns: 1fr; }
       .footer { flex-direction: column; gap: 4px; }
     }
@@ -219,7 +224,7 @@
     <section class="shell hero" id="about" aria-labelledby="hero-title">
       <div>
         <p class="eyebrow">Backend-focused developer</p>
-        <h1 id="hero-title">Hi, I’m <em>Chan&nbsp;Myae&nbsp;Kyaw&nbsp;Min</em>.</h1>
+        <h1 id="hero-title">Hi, I’m <em>Chan Myae Kyaw Min</em>.</h1>
         <p class="hero-copy">A backend-focused full-stack developer who enjoys building dependable web applications with clean logic and well-structured data.</p>
         <div class="actions">
           <a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
